@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,7 +63,22 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Be Vietnam Pro', system-ui;
   }
+
+  html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 6px;
+  }
+  html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   body {
     @apply bg-background text-foreground;
   }
