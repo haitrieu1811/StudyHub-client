@@ -22,7 +22,7 @@ const IS_AUTHENTICATED = true
 
 export default function Header() {
   return (
-    <header className='bg-background'>
+    <header className='bg-background sticky top-0 left-0 right-0 z-10'>
       <div className='flex justify-between items-center container py-3'>
         {/* Logo and slogan */}
         <div className='flex items-center space-x-3'>
@@ -252,7 +252,7 @@ export default function Header() {
         )}
       </div>
       <nav className='border-y border-y-border'>
-        <div className='container py-1 flex justify-center'>
+        <div className='container py-1 flex justify-end'>
           <Button asChild variant='ghost'>
             <Link to={PATH.HOME} className='flex items-center'>
               <House className='w-4 h-4 mr-2' />
