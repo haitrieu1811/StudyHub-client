@@ -70,7 +70,7 @@ export default function Home() {
             .map((_, index) => (
               <div key={index} className='col-span-3'>
                 <div className='rounded-2xl border-b-[3px] border-b-transparent hover:border-b-primary transition-colors'>
-                  <Link to={PATH.HOME}>
+                  <Link to={PATH.COURSE_DETAIL('1')}>
                     <img
                       src='https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png'
                       alt=''

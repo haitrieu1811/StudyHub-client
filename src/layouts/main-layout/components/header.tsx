@@ -1,6 +1,6 @@
 import Tippy from '@tippyjs/react/headless'
-import { Bell, BookText, Calendar, CircleHelp, House, Map, Megaphone } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Bell, BookText, Calendar, ChevronLeft, CircleHelp, House, Map, Megaphone } from 'lucide-react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 import logo from '@/assets/logo.png'
 import { Button } from '@/components/ui/button'
@@ -21,6 +21,9 @@ import { cn } from '@/lib/utils'
 const IS_AUTHENTICATED = true
 
 export default function Header() {
+  const location = useLocation()
+  const navigate = useNavigate()
+
   return (
     <header className='bg-background sticky top-0 left-0 right-0 z-10'>
       <div className='flex justify-between items-center container py-3'>
@@ -29,7 +32,15 @@ export default function Header() {
           <Link to={PATH.LOGIN}>
             <img src={logo} alt='Logo' className='rounded-md object-cover aspect-square w-10 h-10' />
           </Link>
-          <span className='text-sm font-semibold tracking-tight'>Học lập trình để đi làm</span>
+          {location.pathname === PATH.HOME && (
+            <span className='text-sm font-semibold tracking-tight'>Học lập trình để đi làm</span>
+          )}
+          {location.pathname !== PATH.HOME && (
+            <Button variant='link' className='p-0 text-muted-foreground' onClick={() => navigate(-1)}>
+              <ChevronLeft className='w-4 h-4 mr-1' />
+              Quay lại
+            </Button>
+          )}
         </div>
         {/* Search box */}
         <SearchBox />
