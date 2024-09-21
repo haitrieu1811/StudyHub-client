@@ -29,7 +29,7 @@ export default function Header() {
       <div className='flex justify-between items-center container py-3'>
         {/* Logo and slogan */}
         <div className='flex items-center space-x-3'>
-          <Link to={PATH.LOGIN}>
+          <Link to={PATH.HOME}>
             <img src={logo} alt='Logo' className='rounded-md object-cover aspect-square w-10 h-10' />
           </Link>
           {location.pathname === PATH.HOME && (
