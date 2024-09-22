@@ -1,10 +1,9 @@
 import Autoplay from 'embla-carousel-autoplay'
-import { Crown, Timer, Video } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Crown } from 'lucide-react'
 
+import CourseItem from '@/components/course-item'
 import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import PATH from '@/constants/path'
 
 export default function Home() {
   return (
@@ -69,34 +68,7 @@ export default function Home() {
             .fill(0)
             .map((_, index) => (
               <div key={index} className='col-span-3'>
-                <div className='rounded-2xl border-b-[3px] border-b-transparent hover:border-b-primary transition-colors'>
-                  <Link to={PATH.COURSE_DETAIL('1')}>
-                    <img
-                      src='https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png'
-                      alt=''
-                      className='rounded-t-2xl aspect-video object-cover'
-                    />
-                  </Link>
-                  <div className='bg-muted rounded-b-2xl space-y-2 px-6 py-4'>
-                    <Link to={PATH.HOME} className='font-semibold'>
-                      HTML CSS Pro
-                    </Link>
-                    <div className='flex items-center space-x-3 text-sm'>
-                      <div className='line-through text-muted-foreground'>2.500.000đ</div>
-                      <div className='font-semibold'>1.299.000đ</div>
-                    </div>
-                    <div className='flex items-center space-x-3 text-xs'>
-                      <div className='flex items-center'>
-                        <Video className='w-4 h-4 mr-2' />
-                        590
-                      </div>
-                      <div className='flex items-center'>
-                        <Timer className='w-4 h-4 mr-2' />
-                        116h44p
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <CourseItem />
               </div>
             ))}
         </div>
