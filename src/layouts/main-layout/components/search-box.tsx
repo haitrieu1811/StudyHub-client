@@ -38,10 +38,10 @@ export default function SearchBox() {
                     Xem thêm
                   </Button>
                 </div>
-                <div>
+                <div className='p-1'>
                   <Link
                     to={PATH.HOME}
-                    className='px-4 py-1 hover:bg-muted transition-colors flex items-center space-x-2'
+                    className='px-4 py-2 hover:bg-muted transition-colors flex items-center space-x-2 rounded-md'
                   >
                     <img
                       src='https://files.fullstack.edu.vn/f8-prod/courses/13/13.png'

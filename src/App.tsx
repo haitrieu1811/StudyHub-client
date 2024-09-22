@@ -2,9 +2,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import PATH from '@/constants/path'
 import MainLayout from '@/layouts/main-layout'
+import CourseDetail from '@/pages/course-detail'
 import Home from '@/pages/home'
 import Login from '@/pages/login'
-import CourseDetail from '@/pages/course-detail'
+import { ThemeProvider } from '@/providers/theme.provider'
 
 const router = createBrowserRouter([
   {
@@ -30,5 +31,9 @@ const router = createBrowserRouter([
 ])
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
 }

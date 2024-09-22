@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
+
 import { Button } from '@/components/ui/button'
 import PATH from '@/constants/path'
-import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
               </Link>
               <div className='text-white font-semibold tracking-tight'>Học lập trình để đi làm</div>
             </div>
-            <div className='text-muted text-sm space-y-2'>
+            <div className='text-muted-foreground text-sm space-y-2'>
               <div>
                 <span className='font-semibold'>Điện thoại:</span> 0775.939.704
               </div>
@@ -34,22 +35,22 @@ export default function Footer() {
             <h3 className='font-semibold tracking-tight text-white text-lg'>Về F8</h3>
             <ul className='text-sm'>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Giới thiệu</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Liên hệ</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Điều khoản</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Bảo mật</Link>
                 </Button>
               </li>
@@ -59,32 +60,32 @@ export default function Footer() {
             <h3 className='font-semibold tracking-tight text-white text-lg'>Sản phẩm</h3>
             <ul className='text-sm'>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game Nested</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game CSS Dinner</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game CSS Selectors</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game Froggy</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game Froggy Pro</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Game Scoops</Link>
                 </Button>
               </li>
@@ -94,32 +95,32 @@ export default function Footer() {
             <h3 className='font-semibold tracking-tight text-white text-lg'>Công cụ</h3>
             <ul className='text-sm'>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Tạo CV xin việc</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Rút gọn liên kết</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Clip-path maker</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Snippet generator</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>CSS Grid generator</Link>
                 </Button>
               </li>
               <li>
-                <Button asChild variant='link' className='text-white p-0'>
+                <Button asChild variant='link' className='text-muted-foreground p-0'>
                   <Link to={PATH.HOME}>Cảnh báo sờ tay lên mặt</Link>
                 </Button>
               </li>
@@ -127,7 +128,7 @@ export default function Footer() {
           </div>
           <div className='col-span-3 space-y-5'>
             <h3 className='font-semibold tracking-tight text-white text-lg'>Công ty cổ phần công nghệ giáo dục F8</h3>
-            <div className='text-muted text-sm space-y-2'>
+            <div className='text-muted-foreground text-sm space-y-2'>
               <div>
                 <span className='font-semibold'>Mã số thuế:</span> 0109922901
               </div>
