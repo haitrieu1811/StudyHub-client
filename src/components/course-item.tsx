@@ -15,7 +15,7 @@ export default function CourseItem() {
       </Link>
 
       <div className='space-y-3'>
-        <Link to={PATH.HOME} className='font-semibold line-clamp-2'>
+        <Link to={PATH.LEARNING('1')} className='font-semibold line-clamp-2'>
           HTML CSS Pro
         </Link>
         <div className='flex items-center space-x-3 text-sm'>
